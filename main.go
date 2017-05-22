@@ -134,7 +134,7 @@ func main() {
 	startBackupRequestParams.Set("fileName", "TeamCity_Backup")
 	startBackupRequestParams.Set("includeBuildLogs", "true")
 	startBackupRequestParams.Set("includeConfigs", "true")
-	startBackupRequestParams.Set("includeDatabase", "false")
+	startBackupRequestParams.Set("includeDatabase", "true")
 	startBackupRequestParams.Set("includePersonalChangers", "true")
 
 	startBackupRequest, err := http.NewRequest(http.MethodPost, fmt.Sprintf("%s/httpAuth/app/rest/server/backup", teamcityBaseURL), nil)
